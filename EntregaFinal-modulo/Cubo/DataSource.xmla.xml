@@ -1,0 +1,21 @@
+<Alter AllowCreate="true" ObjectExpansion="ObjectProperties" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+	<Object>
+		<DatabaseID>Pubs_SSAS</DatabaseID>
+	</Object>
+	<ObjectDefinition>
+		<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<ID>Pubs_SSAS</ID>
+			<Name>Pubs_SSAS</Name>
+			<DataSources>
+				<DataSource xsi:type="RelationalDataSource">
+					<ID>Pubs_DW_DS</ID>
+					<Name>Pubs_DW Data Source</Name>
+					<ConnectionString>Provider=SQLNCLI11;Data Source=DESKTOP-0K5CLVH;Initial Catalog=Pubs_DW;Integrated Security=SSPI;</ConnectionString>
+					<ImpersonationInfo>
+						<ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
+					</ImpersonationInfo>
+				</DataSource>
+			</DataSources>
+		</Database>
+	</ObjectDefinition>
+</Alter>

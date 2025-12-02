@@ -1,0 +1,14 @@
+<Create xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+	<ObjectDefinition>
+		<Database>
+			<ID>Pubs_SSAS</ID>
+			<Name>Pubs_SSAS</Name>
+			<Description>Modelo Tabular Pubs Bookstore</Description>
+			<Language>1033</Language>
+			<Collation>Latin1_General_CI_AS</Collation>
+			<DataSourceImpersonationInfo>
+				<ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
+			</DataSourceImpersonationInfo>
+		</Database>
+	</ObjectDefinition>
+</Create>
