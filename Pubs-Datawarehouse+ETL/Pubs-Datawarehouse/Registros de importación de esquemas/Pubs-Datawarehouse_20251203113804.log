@@ -1,0 +1,89 @@
+3/12/2025 19:38:04	Este registro contiene información acerca de la operación de importación de esquema en el proyecto 'Pubs-Datawarehouse' del equipo 'DESKTOP-0K5CLVH' por el usuario 'PC-LIFE'.
+3/12/2025 19:38:04	Se inició la importación del esquema de la base de datos.
+3/12/2025 19:38:09	Recopilando credenciales de la base de datos
+3/12/2025 19:38:09	Recopilando opciones de base de datos
+3/12/2025 19:38:09	Recopilando la opción de configuración de ámbito de la base de datos genérica
+3/12/2025 19:38:09	Recopilando usuarios
+3/12/2025 19:38:09	Recopilando roles
+3/12/2025 19:38:09	Recopilando roles de aplicación
+3/12/2025 19:38:09	Recopilando pertenencias a roles
+3/12/2025 19:38:09	Recopilando grupos de archivos
+3/12/2025 19:38:09	Recopilando catálogos de texto completo
+3/12/2025 19:38:09	Recopilando ensamblados
+3/12/2025 19:38:09	Recopilando certificados
+3/12/2025 19:38:09	Recopilando claves asimétricas
+3/12/2025 19:38:09	Recopilando claves simétricas
+3/12/2025 19:38:09	Recopilando claves simétricas cifradas
+3/12/2025 19:38:09	Recopilando esquemas
+3/12/2025 19:38:09	Recopilando colecciones de esquemas XML
+3/12/2025 19:38:09	Recopilando tipos de datos definidos por el usuario
+3/12/2025 19:38:09	Recopilando tipos definidos por el usuario
+3/12/2025 19:38:09	Recopilando tipos de tabla
+3/12/2025 19:38:09	Recopilando claves únicas para tipos de tabla
+3/12/2025 19:38:09	Recopilando claves principales para tipos de tabla
+3/12/2025 19:38:09	Recopilando índices para tipos de tablas
+3/12/2025 19:38:09	Recopilando restricciones CHECK para tipos de tabla
+3/12/2025 19:38:09	Recopilando restricciones DEFAULT para tipos de tabla
+3/12/2025 19:38:09	Recopilando funciones de partición
+3/12/2025 19:38:09	Recopilando esquemas de partición
+3/12/2025 19:38:09	Recopilando funciones
+3/12/2025 19:38:09	Recopilando funciones cifradas
+3/12/2025 19:38:09	Recopilando agregados
+3/12/2025 19:38:09	Recopilando procedimientos
+3/12/2025 19:38:09	Recopilando procedimientos cifrados
+3/12/2025 19:38:09	Recopilando tablas
+3/12/2025 19:38:09	Recopilando claves principales
+3/12/2025 19:38:09	Recopilando restricciones UNIQUE
+3/12/2025 19:38:09	Recopilando claves externas
+3/12/2025 19:38:09	Recopilando restricciones DEFAULT
+3/12/2025 19:38:09	Recopilando restricciones CHECK
+3/12/2025 19:38:09	Recopilando vistas
+3/12/2025 19:38:09	Recopilando vistas cifradas
+3/12/2025 19:38:09	Recopilando índices
+3/12/2025 19:38:09	Recopilando estadísticas
+3/12/2025 19:38:09	Recopilando listas de palabras irrelevantes de índices de texto completo
+3/12/2025 19:38:09	Recopilando listas de propiedades de búsqueda
+3/12/2025 19:38:09	Recopilando propiedades de búsqueda
+3/12/2025 19:38:09	Recopilando índices de texto completo
+3/12/2025 19:38:09	Recopilando índices de almacenamiento de columnas
+3/12/2025 19:38:09	Recopilando índices espaciales
+3/12/2025 19:38:09	Recopilando índices XML
+3/12/2025 19:38:09	Recopilando índices XML selectivos
+3/12/2025 19:38:09	Recopilando desencadenadores cifrados
+3/12/2025 19:38:09	Recopilando desencadenadores
+3/12/2025 19:38:09	Recopilando DDL triggers cifrados y de CLR
+3/12/2025 19:38:09	Recopilando DDL triggers
+3/12/2025 19:38:09	Creación de la restricción perimetral en curso
+3/12/2025 19:38:09	Recopilando sinónimos
+3/12/2025 19:38:09	Recopilando valores predeterminados
+3/12/2025 19:38:09	Recopilando enlaces UDDT de restricción de datos
+3/12/2025 19:38:09	Recopilando reglas
+3/12/2025 19:38:09	Recopilando enlaces UDDT de restricción de datos
+3/12/2025 19:38:09	Recopilando tipos de mensaje
+3/12/2025 19:38:09	Recopilando colas
+3/12/2025 19:38:09	Recopilando contratos
+3/12/2025 19:38:09	Recopilando servicios
+3/12/2025 19:38:09	Recopilando notificaciones de eventos
+3/12/2025 19:38:09	Recopilando enlaces de servicio remoto
+3/12/2025 19:38:09	Recopilando prioridades de Broker
+3/12/2025 19:38:09	Recopilando firmas
+3/12/2025 19:38:09	Recopilando opciones de compresión
+3/12/2025 19:38:09	Recopilando tipos de secuencia
+3/12/2025 19:38:09	Recopilando directivas de seguridad
+3/12/2025 19:38:09	Recopilar claves de cifrado de columna
+3/12/2025 19:38:09	Recopilando claves maestras de columna
+3/12/2025 19:38:09	Recopilando orígenes de datos externos
+3/12/2025 19:38:09	Recopilando formatos de archivo externos
+3/12/2025 19:38:09	Recopilando tablas externas
+3/12/2025 19:38:09	Recopilando opciones de compresión de índice XML
+3/12/2025 19:38:09	Recopilando permisos de base de datos
+3/12/2025 19:38:09	Recopilando propiedades extendidas
+3/12/2025 19:38:09	Recopilando ensamblados
+3/12/2025 19:38:09	Recopilando credenciales
+3/12/2025 19:38:09	Recopilando inicios de sesión
+3/12/2025 19:38:09	Recopilando auditorías de servidor
+3/12/2025 19:38:10	Buscando elementos duplicados en el proyecto
+3/12/2025 19:38:10	Ha finalizado el procesamiento de los elementos duplicados
+3/12/2025 19:38:10	Finalizó la importación de la base de datos.
+3/12/2025 19:38:10	Se guardó un resumen de la importación en la siguiente ubicación: C:\Users\PC-LIFE\source\repos\Pubs-Datawarehouse\Pubs-Datawarehouse\Registros de importación de esquemas\Pubs-Datawarehouse_20251203113804.log
+3/12/2025 19:38:10	Haga clic en Finalizar para continuar...
