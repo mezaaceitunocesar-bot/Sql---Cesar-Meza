@@ -1,0 +1,10 @@
+C:\Users\PC-LIFE\source\repos\ProyectoPubs-BI\Pubs-Database\bin\Debug\Pubs-Database.dacpac
+C:\Users\PC-LIFE\source\repos\ProyectoPubs-BI\Pubs-Database\obj\Debug\Pubs-Database.sqlproj.AssemblyReference.cache
+C:\Users\PC-LIFE\source\repos\ProyectoPubs-BI\Pubs-Database\obj\Debug\Pubs_Database.dll
+C:\Users\PC-LIFE\source\repos\ProyectoPubs-BI\Pubs-Database\obj\Debug\Pubs_Database.pdb
+C:\Users\PC-LIFE\source\repos\ProyectoPubs-BI\Pubs-Database\bin\Debug\Pubs_Database.dll
+C:\Users\PC-LIFE\source\repos\ProyectoPubs-BI\Pubs-Database\bin\Debug\Pubs_Database.pdb
+C:\Users\PC-LIFE\source\repos\ProyectoPubs-BI\Pubs-Database\obj\Debug\Model.xml
+C:\Users\PC-LIFE\source\repos\ProyectoPubs-BI\Pubs-Database\obj\Debug\refactor.xml
+C:\Users\PC-LIFE\source\repos\ProyectoPubs-BI\Pubs-Database\obj\Debug\postdeploy.sql
+C:\Users\PC-LIFE\source\repos\ProyectoPubs-BI\Pubs-Database\obj\Debug\predeploy.sql

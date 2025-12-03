@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='RulesTransform.xslt'?>
+<Report ToolsVersion="0.1.175.0">
+	<Information>
+		<Solution>Pubs-Database.dacpac.sln</Solution>
+		<ReportDate>2025-12-03T16:18:47.2897299-04:00</ReportDate>
+		<InspectionScope>
+			<Element>Project</Element>
+		</InspectionScope>
+	</Information>
+	<IssueTypes>
+		<IssueType Severity="Warning" Description="The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes." Category="Microsoft.Rules.Data.Design" Id="SR0001" />
+		<IssueType Severity="Warning" Description="A column without an index that is used as an IN predicate test expression might degrade performance." Category="Microsoft.Rules.Data.Performance" Id="SR0004" />
+		<IssueType Severity="Warning" Description="Avoid using patterns that start with &quot;%&quot; in LIKE predicates" Category="Microsoft.Rules.Data.Performance" Id="SR0005" />
+		<IssueType Severity="Warning" Description="A column in an expression to be compared in a predicate might cause a table scan and degrade performance." Category="Microsoft.Rules.Data.Performance" Id="SR0006" />
+		<IssueType Severity="Warning" Description="Nullable columns can cause final results to be evaluated as NULL for the predicate." Category="Microsoft.Rules.Data.Performance" Id="SR0007" />
+		<IssueType Severity="Warning" Description="Potential misuse of system function @@IDENTITY." Category="Microsoft.Rules.Data.Design" Id="SR0008" />
+		<IssueType Severity="Warning" Description="Avoid {0} of only {1}." Category="Microsoft.Rules.Data.Design" Id="SR0009" />
+		<IssueType Severity="Warning" Description="Old-style JOIN syntax is used." Category="Microsoft.Rules.Data.Design" Id="SR0010" />
+		<IssueType Severity="Warning" Description="Object name({0}) contains special characters." Category="Microsoft.Rules.Data.Naming" Id="SR0011" />
+		<IssueType Severity="Warning" Description="{0}({1}) is used as a type name." Category="Microsoft.Rules.Data.Naming" Id="SR0012" />
+		<IssueType Severity="Warning" Description="Output parameter ({0}) is not populated in all code paths." Category="Microsoft.Rules.Data.Design" Id="SR0013" />
+		<IssueType Severity="Warning" Description="Data types of {0}({1}) and {2}({3}) are incompatible." Category="Microsoft.Rules.Data.Design" Id="SR0014" />
+		<IssueType Severity="Warning" Description="Deterministic function call ({0}) might cause an unnecessary table scan." Category="Microsoft.Rules.Data.Performance" Id="SR0015" />
+		<IssueType Severity="Warning" Description="Stored procedure({0}) includes sp_ prefix in its name." Category="Microsoft.Rules.Data.Naming" Id="SR0016" />
+		<IssueType Severity="Warning" Description="Avoid cross server joins" Category="Smells.CodeSmells" Id="SML001" />
+		<IssueType Severity="Warning" Description="Best practice is to use two part naming" Category="Smells.CodeSmells" Id="SML002" />
+		<IssueType Severity="Warning" Description="Dirty Reads cause consistency errors" Category="Smells.CodeSmells" Id="SML003" />
+		<IssueType Severity="Warning" Description="Dont Override the optimizer" Category="Smells.CodeSmells" Id="SML004" />
+		<IssueType Severity="Warning" Description="Avoid use of 'Select *'" Category="Smells.CodeSmells" Id="SML005" />
+		<IssueType Severity="Warning" Description="Avoid Explicit Conversion of Columnar data" Category="Smells.CodeSmells" Id="SML006" />
+		<IssueType Severity="Warning" Description="Avoid use of ordinal positions in ORDER BY Clauses" Category="Smells.CodeSmells" Id="SML007" />
+		<IssueType Severity="Warning" Description="Dont Change DateFormat" Category="Smells.CodeSmells" Id="SML008" />
+		<IssueType Severity="Warning" Description="Dont Change DateFirst" Category="Smells.CodeSmells" Id="SML009" />
+		<IssueType Severity="Warning" Description="ReadUnCommitted: Dirty reads can cause consistency errors" Category="Smells.CodeSmells" Id="SML010" />
+		<IssueType Severity="Warning" Description="Single character aliases are poor practice" Category="Smells.CodeSmells" Id="SML011" />
+		<IssueType Severity="Warning" Description="Missing Column specifications on insert" Category="Smells.CodeSmells" Id="SML012" />
+		<IssueType Severity="Warning" Description="CONCAT_NULL_YIELDS_NULL should be on" Category="Smells.CodeSmells" Id="SML013" />
+		<IssueType Severity="Warning" Description="ANSI_NULLS should be On" Category="Smells.CodeSmells" Id="SML014" />
+		<IssueType Severity="Warning" Description="ANSI_PADDING should be On" Category="Smells.CodeSmells" Id="SML015" />
+		<IssueType Severity="Warning" Description="ANSI_WARNINGS should be On" Category="Smells.CodeSmells" Id="SML016" />
+		<IssueType Severity="Warning" Description="ARITHABORT should be On" Category="Smells.CodeSmells" Id="SML017" />
+		<IssueType Severity="Warning" Description="NUMERIC_ROUNDABORT should be Off" Category="Smells.CodeSmells" Id="SML018" />
+		<IssueType Severity="Warning" Description="QUOTED_IDENTIFIER should be ON" Category="Smells.CodeSmells" Id="SML019" />
+		<IssueType Severity="Warning" Description="FORCEPLAN should be OFF" Category="Smells.CodeSmells" Id="SML020" />
+		<IssueType Severity="Warning" Description="Use 2 part naming in EXECUTE statements" Category="Smells.CodeSmells" Id="SML021" />
+		<IssueType Severity="Warning" Description="Identity value should be agnostic" Category="Smells.CodeSmells" Id="SML022" />
+		<IssueType Severity="Warning" Description="Avoid single line comments" Category="Smells.CodeSmells" Id="SML023" />
+		<IssueType Severity="Warning" Description="Use two part naming" Category="Smells.CodeSmells" Id="SML024" />
+		<IssueType Severity="Warning" Description="RANGE windows are much slower then ROWS (Explicit use)" Category="Smells.CodeSmells" Id="SML025" />
+		<IssueType Severity="Warning" Description="RANGE windows are much slower then ROWS (Implicit use)" Category="Smells.CodeSmells" Id="SML026" />
+		<IssueType Severity="Warning" Description="Create table statements should specify schema" Category="Smells.CodeSmells" Id="SML027" />
+		<IssueType Severity="Warning" Description="Ordering in a view does not guarantee result set ordering" Category="Smells.CodeSmells" Id="SML028" />
+		<IssueType Severity="Warning" Description="Cursors default to writable.  Specify FAST_FORWARD" Category="Smells.CodeSmells" Id="SML029" />
+		<IssueType Severity="Warning" Description="Include SET NOCOUNT ON inside stored procedures" Category="Smells.CodeSmells" Id="SML030" />
+		<IssueType Severity="Warning" Description="EXISTS/NOT EXISTS can be more performant than COUNT(*)" Category="Smells.CodeSmells" Id="SML031" />
+		<IssueType Severity="Warning" Description="Ordering in a derived table does not guarantee result set ordering" Category="Smells.CodeSmells" Id="SML032" />
+		<IssueType Severity="Warning" Description="Single character variable names are poor practice" Category="Smells.CodeSmells" Id="SML033" />
+		<IssueType Severity="Warning" Description="Expression used with TOP should be wrapped in parenthises" Category="Smells.CodeSmells" Id="SML034" />
+		<IssueType Severity="Warning" Description="TOP(100) percent is ignored by the optimizer" Category="Smells.CodeSmells" Id="SML035" />
+		<IssueType Severity="Warning" Description="Foreign Key Constraints should be named" Category="Smells.CodeSmells" Id="SML036" />
+		<IssueType Severity="Warning" Description="Check Constraints should be named" Category="Smells.CodeSmells" Id="SML037" />
+		<IssueType Severity="Warning" Description="Primary Key Constraints on temporary tables should not be named" Category="Smells.CodeSmells" Id="SML038" />
+		<IssueType Severity="Warning" Description="Default Constraints on temporary tables should not be named" Category="Smells.CodeSmells" Id="SML039" />
+		<IssueType Severity="Warning" Description="Foreign Key Constraints on temporary tables should not be named" Category="Smells.CodeSmells" Id="SML040" />
+		<IssueType Severity="Warning" Description="Check Constraints on temporary tables should not be named" Category="Smells.CodeSmells" Id="SML041" />
+		<IssueType Severity="Warning" Description="Use of SET ROWCOUNT is deprecated : use TOP" Category="Smells.CodeSmells" Id="SML042" />
+		<IssueType Severity="Warning" Description="Potential SQL Injection Issue" Category="Smells.CodeSmells" Id="SML043" />
+		<IssueType Severity="Warning" Description="Dont override the optimizer ( FORCESCAN )" Category="Smells.CodeSmells" Id="SML044" />
+		<IssueType Severity="Warning" Description="Dont override the optimizer ( Index Hint)" Category="Smells.CodeSmells" Id="SML045" />
+		<IssueType Severity="Warning" Description="&quot;= Null&quot; Comparison" Category="Smells.CodeSmells" Id="SML046" />
+		<IssueType Severity="Warning" Description="Use of deprecated data type" Category="Smells.CodeSmells" Id="SML047" />
+		<IssueType Severity="Warning" Description="Table does not have a natural key." Category="SqlServer.Rules.Design" Id="SRD0001" />
+		<IssueType Severity="Warning" Description="Table does not have a primary key." Category="SqlServer.Rules.Design" Id="SRD0002" />
+		<IssueType Severity="Warning" Description="Primary Keys should avoid using GUIDS or wide VARCHAR columns." Category="SqlServer.Rules.Design" Id="SRD0003" />
+		<IssueType Severity="Warning" Description="Columns on both sides of a foreign key should be indexed." Category="SqlServer.Rules.Design" Id="SRD0004" />
+		<IssueType Severity="Warning" Description="Avoid the (n)char column type except for short static length data." Category="SqlServer.Rules.Design" Id="SRD0005" />
+		<IssueType Severity="Warning" Description="Avoid using SELECT *." Category="SqlServer.Rules.Design" Id="SRD0006" />
+		<IssueType Severity="Warning" Description="Wrap multiple action statements within a transaction." Category="SqlServer.Rules.Design" Id="SRD0009" />
+		<IssueType Severity="Warning" Description="Start identity column used in a primary key with a seed of 1000 or higher." Category="SqlServer.Rules.Design" Id="SRD0010" />
+		<IssueType Severity="Warning" Description="Equality and inequality comparisons involving a NULL constant found. Use IS NULL or IS NOT NULL." Category="SqlServer.Rules.Design" Id="SRD0011" />
+		<IssueType Severity="Warning" Description="Variable declared but never referenced or assigned." Category="SqlServer.Rules.Design" Id="SRD0012" />
+		<IssueType Severity="Warning" Description="Wrap multiple action statements within a try catch." Category="SqlServer.Rules.Design" Id="SRD0013" />
+		<IssueType Severity="Warning" Description="TOP clause used in a query without an ORDER BY clause." Category="SqlServer.Rules.Design" Id="SRD0014" />
+		<IssueType Severity="Warning" Description="Always use a column list in INSERT statements." Category="SqlServer.Rules.Design" Id="SRD0015" />
+		<IssueType Severity="Warning" Description="Input parameter never used. Consider removing the parameter or using it." Category="SqlServer.Rules.Design" Id="SRD0016" />
+		<IssueType Severity="Warning" Description="DELETE statement without row limiting conditions." Category="SqlServer.Rules.Design" Id="SRD0017" />
+		<IssueType Severity="Warning" Description="UPDATE statement without row limiting conditions." Category="SqlServer.Rules.Design" Id="SRD0018" />
+		<IssueType Severity="Warning" Description="Avoid joining tables with views." Category="SqlServer.Rules.Design" Id="SRD0019" />
+		<IssueType Severity="Warning" Description="The query has issues with the join clause. It is either missing a backing foreign key or the join is missing one or more columns." Category="SqlServer.Rules.Design" Id="SRD0020" />
+		<IssueType Severity="Warning" Description="Consider using EXISTS instead of IN when used with a subquery." Category="SqlServer.Rules.Design" Id="SRD0021" />
+		<IssueType Severity="Warning" Description="Avoid EXEC and EXECUTE with string literals. Use parameterized sp_executesql instead." Category="SqlServer.Rules.Design" Id="SRD0024" />
+		<IssueType Severity="Warning" Description="Avoid using column numbers in ORDER BY clause." Category="SqlServer.Rules.Design" Id="SRD0025" />
+		<IssueType Severity="Warning" Description="Do not use these data types (VARCHAR, NVARCHAR, CHAR, NCHAR) without specifying length." Category="SqlServer.Rules.Design" Id="SRD0026" />
+		<IssueType Severity="Warning" Description="Do not use DECIMAL or NUMERIC data types without specifying precision and scale." Category="SqlServer.Rules.Design" Id="SRD0027" />
+		<IssueType Severity="Warning" Description="Consider prefixing column names with table name or table alias." Category="SqlServer.Rules.Design" Id="SRD0028" />
+		<IssueType Severity="Warning" Description="Avoid using Hints to force a particular behavior." Category="SqlServer.Rules.Design" Id="SRD0030" />
+		<IssueType Severity="Warning" Description="Avoid using CHARINDEX function in WHERE clauses." Category="SqlServer.Rules.Design" Id="SRD0031" />
+		<IssueType Severity="Warning" Description="Try to avoid the OR operator in query where clauses if possible.  (Sargable)" Category="SqlServer.Rules.Design" Id="SRD0032" />
+		<IssueType Severity="Warning" Description="Avoid using cursors." Category="SqlServer.Rules.Design" Id="SRD0033" />
+		<IssueType Severity="Warning" Description="Do not use the NOLOCK clause." Category="SqlServer.Rules.Design" Id="SRD0034" />
+		<IssueType Severity="Warning" Description="Do not use WAITFOR DELAY/TIME statement in stored procedures, functions, and triggers." Category="SqlServer.Rules.Design" Id="SRD0035" />
+		<IssueType Severity="Warning" Description="Do not use SET ROWCOUNT to restrict the number of rows." Category="SqlServer.Rules.Design" Id="SRD0036" />
+		<IssueType Severity="Warning" Description="Consider aliasing all table sources in the query." Category="SqlServer.Rules.Design" Id="SRD0038" />
+		<IssueType Severity="Warning" Description="Use fully qualified object names in SELECT, UPDATE, DELETE, MERGE and EXECUTE statements. [schema].[name]." Category="SqlServer.Rules.Design" Id="SRD0039" />
+		<IssueType Severity="Warning" Description="Avoid use of the SELECT INTO syntax." Category="SqlServer.Rules.Design" Id="SRD0041" />
+		<IssueType Severity="Warning" Description="The arguments of the function '{0}' are not of the same datatype." Category="SqlServer.Rules.Design" Id="SRD0043" />
+		<IssueType Severity="Warning" Description="The RAISERROR statement with severity above 18 requires the WITH LOG clause." Category="SqlServer.Rules.Design" Id="SRD0044" />
+		<IssueType Severity="Warning" Description="Excessive number of indexes on table found on table." Category="SqlServer.Rules.Design" Id="SRD0045" />
+		<IssueType Severity="Warning" Description="Do not use the real or float data types for parameters or columns as they are approximate value data types." Category="SqlServer.Rules.Design" Id="SRD0046" />
+		<IssueType Severity="Warning" Description="Avoid using columns that match other columns by name, but are different in type or size." Category="SqlServer.Rules.Design" Id="SRD0047" />
+		<IssueType Severity="Warning" Description="The comparison expression always evaluates to TRUE or FALSE." Category="SqlServer.Rules.Design" Id="SRD0050" />
+		<IssueType Severity="Warning" Description="Don't use deprecated TEXT, NTEXT and IMAGE data types." Category="SqlServer.Rules.Design" Id="SRD0051" />
+		<IssueType Severity="Warning" Description="Index has exact duplicate or borderline overlapping index." Category="SqlServer.Rules.Design" Id="SRD0052" />
+		<IssueType Severity="Warning" Description="Object has different collation than the rest of the database. Try to avoid using a different collation unless by design." Category="SqlServer.Rules.Design" Id="SRD0053" />
+		<IssueType Severity="Warning" Description="The object was created with invalid options." Category="SqlServer.Rules.Design" Id="SRD0055" />
+		<IssueType Severity="Warning" Description="Use OUTPUT or SCOPE_IDENTITY() instead of @@IDENTITY." Category="SqlServer.Rules.Design" Id="SRD0056" />
+		<IssueType Severity="Warning" Description="Do not mix DML with DDL statements. Group DDL statements at the beginning of procedures followed by DML statements." Category="SqlServer.Rules.Design" Id="SRD0057" />
+		<IssueType Severity="Warning" Description="Always use parameter names when calling stored procedures." Category="SqlServer.Rules.Design" Id="SRD0058" />
+		<IssueType Severity="Warning" Description="The procedure grants itself permissions. Possible missing GO command." Category="SqlServer.Rules.Design" Id="SRD0060" />
+		<IssueType Severity="Warning" Description="The database is configured with invalid options." Category="SqlServer.Rules.Design" Id="SRD0061" />
+		<IssueType Severity="Warning" Description="Create SQL Server temporary tables with the correct collation or use database default as the tempdb having a different collation than the database can cause issues and or data instability." Category="SqlServer.Rules.Design" Id="SRD0062" />
+		<IssueType Severity="Warning" Description="Do not use IF statements containing queries in stored procedures." Category="SqlServer.Rules.Design" Id="SRD0063" />
+		<IssueType Severity="Warning" Description="Cache multiple calls to GETDATE or SYSDATETIME into a variable." Category="SqlServer.Rules.Design" Id="SRD0064" />
+		<IssueType Severity="Warning" Description="Avoid 'NOT FOR REPLICATION' unless this is the desired behavior and replication is in use." Category="SqlServer.Rules.Design" Id="SRD0065" />
+		<IssueType Severity="Warning" Description="Use BEGIN and END symbols inside conditional statements." Category="SqlServer.Rules.Design" Id="SRD0066" />
+		<IssueType Severity="Warning" Description="Use capitalized keywords for enhanced readability." Category="SqlServer.Rules.Design" Id="SRD0067" />
+		<IssueType Severity="Warning" Description="Query statements should finish with a semicolon - ';'." Category="SqlServer.Rules.Design" Id="SRD0068" />
+		<IssueType Severity="Warning" Description="Avoid 'fn_' prefix when naming functions." Category="SqlServer.Rules.Naming" Id="SRN0001" />
+		<IssueType Severity="Warning" Description="Avoid 'sp_' prefix when naming stored procedures." Category="SqlServer.Rules.Naming" Id="SRN0002" />
+		<IssueType Severity="Warning" Description="Two part naming on objects is required." Category="SqlServer.Rules.Naming" Id="SRN0006" />
+		<IssueType Severity="Warning" Description="General naming rules." Category="SqlServer.Rules.Naming" Id="SRN0007" />
+		<IssueType Severity="Warning" Description="Views should not use other views as a data source." Category="SqlServer.Rules.Performance" Id="SRP0001" />
+		<IssueType Severity="Warning" Description="Try to avoid using patterns that start with '%' when using the LIKE keyword if possible.  (Sargable)" Category="SqlServer.Rules.Performance" Id="SRP0002" />
+		<IssueType Severity="Warning" Description="Avoid using DISTINCT keyword inside of aggregate functions." Category="SqlServer.Rules.Performance" Id="SRP0003" />
+		<IssueType Severity="Warning" Description="Avoid returning results in triggers." Category="SqlServer.Rules.Performance" Id="SRP0004" />
+		<IssueType Severity="Warning" Description="SET NOCOUNT ON is recommended to be enabled in stored procedures and triggers." Category="SqlServer.Rules.Performance" Id="SRP0005" />
+		<IssueType Severity="Warning" Description="Try to avoid using not equal operator (&lt;&gt;,!=) in the WHERE clause if possible. (Sargable)" Category="SqlServer.Rules.Performance" Id="SRP0006" />
+		<IssueType Severity="Warning" Description="Local cursor not closed." Category="SqlServer.Rules.Performance" Id="SRP0007" />
+		<IssueType Severity="Warning" Description="Local cursor not explicitly deallocated." Category="SqlServer.Rules.Performance" Id="SRP0008" />
+		<IssueType Severity="Warning" Description="Avoid wrapping columns within a function in the WHERE clause. (Sargable)" Category="SqlServer.Rules.Performance" Id="SRP0009" />
+		<IssueType Severity="Warning" Description="Avoid the use of user defined functions with UPDATE/INSERT/DELETE statements. (Halloween Protection)" Category="SqlServer.Rules.Performance" Id="SRP0010" />
+		<IssueType Severity="Warning" Description="Avoid using the NOT IN predicate in a WHERE clause. (Sargable)" Category="SqlServer.Rules.Performance" Id="SRP0011" />
+		<IssueType Severity="Warning" Description="Consider indexing the columns referenced by IN predicates in order to avoid table scans." Category="SqlServer.Rules.Performance" Id="SRP0012" />
+		<IssueType Severity="Warning" Description="Consider replacing the OUTER JOIN with EXISTS." Category="SqlServer.Rules.Performance" Id="SRP0013" />
+		<IssueType Severity="Warning" Description="Avoid the use of table variables in join clauses." Category="SqlServer.Rules.Performance" Id="SRP0014" />
+		<IssueType Severity="Warning" Description="Avoid the use of calculations on columns in the where clause. (Sargable)" Category="SqlServer.Rules.Performance" Id="SRP0015" />
+		<IssueType Severity="Warning" Description="Data types on both sides of an equality check should be the same in the where clause. (Sargable)" Category="SqlServer.Rules.Performance" Id="SRP0016" />
+		<IssueType Severity="Warning" Description="Avoid updating columns that are part of the primary key.  (Halloween Protection)" Category="SqlServer.Rules.Performance" Id="SRP0017" />
+		<IssueType Severity="Warning" Description="Query uses a high number of joins. " Category="SqlServer.Rules.Performance" Id="SRP0018" />
+		<IssueType Severity="Warning" Description="Table does not have a clustered index." Category="SqlServer.Rules.Performance" Id="SRP0020" />
+		<IssueType Severity="Warning" Description="Avoid modification of parameters in a stored procedure prior to use in a select query." Category="SqlServer.Rules.Performance" Id="SRP0021" />
+		<IssueType Severity="Warning" Description="Consider using RECOMPILE query hint instead of the WITH RECOMPILE option." Category="SqlServer.Rules.Performance" Id="SRP0022" />
+		<IssueType Severity="Warning" Description="When checking for existence use EXISTS instead of COUNT" Category="SqlServer.Rules.Performance" Id="SRP0023" />
+		<IssueType Severity="Warning" Description="Avoid the use of correlated subqueries except for very small tables." Category="SqlServer.Rules.Performance" Id="SRP0024" />
+	</IssueTypes>
+	<Issues>
+		<Project Name="Pubs-Database">
+			<Issue Message="Use of deprecated data type. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/CodeSmells/SML047.md)" Line="3" Offset="18" File="[dbo].[pub_info]" TypeId="SML047" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/CodeSmells/SML047.md" />
+			<Issue Message="Use of deprecated data type. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/CodeSmells/SML047.md)" Line="4" Offset="18" File="[dbo].[pub_info]" TypeId="SML047" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/CodeSmells/SML047.md" />
+			<Issue Message="The database is configured with these invalid options: ANSI_NULLS OFF, ANSI_PADDING OFF, ANSI_WARNINGS OFF, ARITHABORT OFF, CONCAT_NULL_YIELDS_NULL OFF, QUOTED_IDENTIFIER OFF. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0061.md)" Line="0" Offset="0" File="[]" TypeId="SRD0061" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0061.md" />
+			<Issue Message="Table does not have a primary key. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0002.md)" Line="1" Offset="1" File="[dbo].[discounts]" TypeId="SRD0002" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0002.md" />
+			<Issue Message="Table does not have a clustered index. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Performance/SRP0020.md)" Line="1" Offset="1" File="[dbo].[discounts]" TypeId="SRP0020" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Performance/SRP0020.md" />
+			<Issue Message="Don't use deprecated TEXT, NTEXT and IMAGE data types. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0051.md)" Line="3" Offset="5" File="[dbo].[pub_info]" TypeId="SRD0051" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0051.md" />
+			<Issue Message="Don't use deprecated TEXT, NTEXT and IMAGE data types. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0051.md)" Line="4" Offset="5" File="[dbo].[pub_info]" TypeId="SRD0051" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0051.md" />
+			<Issue Message="Table does not have a primary key. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0002.md)" Line="1" Offset="1" File="[dbo].[roysched]" TypeId="SRD0002" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0002.md" />
+			<Issue Message="Table does not have a clustered index. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Performance/SRP0020.md)" Line="1" Offset="1" File="[dbo].[roysched]" TypeId="SRP0020" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Performance/SRP0020.md" />
+			<Issue Message="PrimaryKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[publishers]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+			<Issue Message="PrimaryKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[sales]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+			<Issue Message="PrimaryKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[stores]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+			<Issue Message="PrimaryKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[titleauthor]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+			<Issue Message="PrimaryKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[pub_info]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+			<Issue Message="PrimaryKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[authors]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+			<Issue Message="PrimaryKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[employee]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+			<Issue Message="PrimaryKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[jobs]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+			<Issue Message="PrimaryKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[titles]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+			<Issue Message="Columns on both sides of a foreign key should be indexed for performance reasons. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0004.md)" Line="7" Offset="5" File="[dbo].[roysched]" TypeId="SRD0004" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0004.md" />
+			<Issue Message="ForeignKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[roysched]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+			<Issue Message="Columns on both sides of a foreign key should be indexed for performance reasons. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0004.md)" Line="12" Offset="5" File="[dbo].[employee]" TypeId="SRD0004" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0004.md" />
+			<Issue Message="ForeignKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[employee]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+			<Issue Message="Columns on both sides of a foreign key should be indexed for performance reasons. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0004.md)" Line="13" Offset="5" File="[dbo].[employee]" TypeId="SRD0004" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0004.md" />
+			<Issue Message="ForeignKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[employee]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+			<Issue Message="ForeignKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[pub_info]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+			<Issue Message="Columns on both sides of a foreign key should be indexed for performance reasons. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0004.md)" Line="11" Offset="5" File="[dbo].[sales]" TypeId="SRD0004" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0004.md" />
+			<Issue Message="ForeignKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[sales]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+			<Issue Message="ForeignKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[sales]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+			<Issue Message="Columns on both sides of a foreign key should be indexed for performance reasons. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0004.md)" Line="9" Offset="5" File="[dbo].[titleauthor]" TypeId="SRD0004" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0004.md" />
+			<Issue Message="ForeignKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[titleauthor]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+			<Issue Message="Columns on both sides of a foreign key should be indexed for performance reasons. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0004.md)" Line="8" Offset="5" File="[dbo].[discounts]" TypeId="SRD0004" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0004.md" />
+			<Issue Message="ForeignKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[discounts]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+			<Issue Message="ForeignKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[titleauthor]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+			<Issue Message="Columns on both sides of a foreign key should be indexed for performance reasons. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0004.md)" Line="14" Offset="5" File="[dbo].[titles]" TypeId="SRD0004" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Design/SRD0004.md" />
+			<Issue Message="ForeignKeyConstraint found without a name. (https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md)" Line="1" Offset="1" File="[dbo].[titles]" TypeId="SRN0007" Link="https://github.com/ErikEJ/SqlServer.Rules/blob/master/docs/Naming/SRN0007.md" />
+		</Project>
+	</Issues>
+</Report>
