@@ -1,0 +1,765 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1600,
+  "model": {
+    "culture": "es-BO",
+    "dataSources": [
+      {
+        "name": "SqlServer DESKTOP-0K5CLVHMSSQLSERVERM Pubs_DW",
+        "connectionString": "Provider=SQLNCLI11;Data Source=DESKTOP-0K5CLVH\\MSSQLSERVERM;Initial Catalog=Pubs_DW;Integrated Security=SSPI;Persist Security Info=false",
+        "impersonationMode": "impersonateCurrentUser",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      },
+      {
+        "name": "SqlServer DESKTOP-0K5CLVHMSSQLSERVERM Pubs_DW 2",
+        "connectionString": "Provider=SQLNCLI11;Data Source=DESKTOP-0K5CLVH\\MSSQLSERVERM;Initial Catalog=Pubs_DW;Integrated Security=SSPI;Persist Security Info=false",
+        "impersonationMode": "impersonateServiceAccount",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "dim_authors",
+        "columns": [
+          {
+            "name": "au_id",
+            "dataType": "string",
+            "sourceColumn": "au_id",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "au_name",
+            "dataType": "string",
+            "sourceColumn": "au_name",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "phone",
+            "dataType": "string",
+            "sourceColumn": "phone",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "city",
+            "dataType": "string",
+            "sourceColumn": "city",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "state",
+            "dataType": "string",
+            "sourceColumn": "state",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "contract",
+            "dataType": "boolean",
+            "sourceColumn": "contract",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_authors",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[dim_authors].*   FROM [dbo].[dim_authors] ",
+              "dataSource": "SqlServer DESKTOP-0K5CLVHMSSQLSERVERM Pubs_DW 2"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "OrigenAutores",
+            "levels": [
+              {
+                "name": "state",
+                "ordinal": 0,
+                "column": "state"
+              },
+              {
+                "name": "city",
+                "ordinal": 1,
+                "column": "city"
+              },
+              {
+                "name": "au_name",
+                "ordinal": 2,
+                "column": "au_name"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[dim_authors].*   FROM [dbo].[dim_authors] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "dim_authors"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "dim_employee",
+        "columns": [
+          {
+            "name": "emp_id",
+            "dataType": "string",
+            "sourceColumn": "emp_id",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "emp_name",
+            "dataType": "string",
+            "sourceColumn": "emp_name",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "job_id",
+            "dataType": "int64",
+            "sourceColumn": "job_id",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "job_desc",
+            "dataType": "string",
+            "sourceColumn": "job_desc",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "job_lvl",
+            "dataType": "int64",
+            "sourceColumn": "job_lvl",
+            "sourceProviderType": "UnsignedTinyInt"
+          },
+          {
+            "name": "pub_id",
+            "dataType": "string",
+            "sourceColumn": "pub_id",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "hire_date",
+            "dataType": "dateTime",
+            "sourceColumn": "hire_date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_employee",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[dim_employee].*   FROM [dbo].[dim_employee] ",
+              "dataSource": "SqlServer DESKTOP-0K5CLVHMSSQLSERVERM Pubs_DW 2"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[dim_employee].*   FROM [dbo].[dim_employee] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "dim_employee"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "dim_publishers",
+        "columns": [
+          {
+            "name": "pub_id",
+            "dataType": "string",
+            "sourceColumn": "pub_id",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "pub_name",
+            "dataType": "string",
+            "sourceColumn": "pub_name",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "city",
+            "dataType": "string",
+            "sourceColumn": "city",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "state",
+            "dataType": "string",
+            "sourceColumn": "state",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "country",
+            "dataType": "string",
+            "sourceColumn": "country",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_publishers",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[dim_publishers].*   FROM [dbo].[dim_publishers] ",
+              "dataSource": "SqlServer DESKTOP-0K5CLVHMSSQLSERVERM Pubs_DW 2"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[dim_publishers].*   FROM [dbo].[dim_publishers] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "dim_publishers"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "dim_stores",
+        "columns": [
+          {
+            "name": "stor_id",
+            "dataType": "string",
+            "sourceColumn": "stor_id",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "stor_name",
+            "dataType": "string",
+            "sourceColumn": "stor_name",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "stor_address",
+            "dataType": "string",
+            "sourceColumn": "stor_address",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "city",
+            "dataType": "string",
+            "sourceColumn": "city",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "state",
+            "dataType": "string",
+            "sourceColumn": "state",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "zip",
+            "dataType": "string",
+            "sourceColumn": "zip",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_stores",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[dim_stores].*   FROM [dbo].[dim_stores] ",
+              "dataSource": "SqlServer DESKTOP-0K5CLVHMSSQLSERVERM Pubs_DW 2"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Ubicacion-tienda",
+            "levels": [
+              {
+                "name": "state",
+                "ordinal": 0,
+                "column": "state"
+              },
+              {
+                "name": "city",
+                "ordinal": 1,
+                "column": "city"
+              },
+              {
+                "name": "stor_name",
+                "ordinal": 2,
+                "column": "stor_name"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[dim_stores].*   FROM [dbo].[dim_stores] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "dim_stores"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "dim_time",
+        "columns": [
+          {
+            "name": "time_id",
+            "dataType": "int64",
+            "sourceColumn": "time_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "full_date",
+            "dataType": "dateTime",
+            "sourceColumn": "full_date",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "day",
+            "dataType": "int64",
+            "sourceColumn": "day",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "month",
+            "dataType": "int64",
+            "sourceColumn": "month",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "year",
+            "dataType": "int64",
+            "sourceColumn": "year",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "quarter",
+            "dataType": "int64",
+            "sourceColumn": "quarter",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "semester",
+            "dataType": "int64",
+            "sourceColumn": "semester",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "day_name",
+            "dataType": "string",
+            "sourceColumn": "day_name",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "is_weekend",
+            "dataType": "boolean",
+            "sourceColumn": "is_weekend",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceProviderType": "Boolean"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_time",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[dim_time].*   FROM [dbo].[dim_time] ",
+              "dataSource": "SqlServer DESKTOP-0K5CLVHMSSQLSERVERM Pubs_DW 2"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Calendario",
+            "levels": [
+              {
+                "name": "year",
+                "ordinal": 0,
+                "column": "year"
+              },
+              {
+                "name": "quarter",
+                "ordinal": 1,
+                "column": "quarter"
+              },
+              {
+                "name": "month",
+                "ordinal": 2,
+                "column": "month"
+              },
+              {
+                "name": "full_date",
+                "ordinal": 3,
+                "column": "full_date"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[dim_time].*   FROM [dbo].[dim_time] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "dim_time"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "dim_titles",
+        "columns": [
+          {
+            "name": "title_id",
+            "dataType": "string",
+            "sourceColumn": "title_id",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "title",
+            "dataType": "string",
+            "sourceColumn": "title",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "type",
+            "dataType": "string",
+            "sourceColumn": "type",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "price",
+            "dataType": "decimal",
+            "sourceColumn": "price",
+            "formatString": "\"Bs\"#,0.00;-\"Bs\"#,0.00;\"Bs\"#,0.00",
+            "sourceProviderType": "Currency",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16394\" DisplayName=\"Bs Español (Bolivia)\" Symbol=\"Bs\" PositivePattern=\"0\" NegativePattern=\"1\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "advance",
+            "dataType": "decimal",
+            "sourceColumn": "advance",
+            "formatString": "\"Bs\"#,0.00;-\"Bs\"#,0.00;\"Bs\"#,0.00",
+            "sourceProviderType": "Currency",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16394\" DisplayName=\"Bs Español (Bolivia)\" Symbol=\"Bs\" PositivePattern=\"0\" NegativePattern=\"1\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "royalty",
+            "dataType": "int64",
+            "sourceColumn": "royalty",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "ytd_sales",
+            "dataType": "int64",
+            "sourceColumn": "ytd_sales",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "pubdate",
+            "dataType": "dateTime",
+            "sourceColumn": "pubdate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBDate"
+          },
+          {
+            "name": "pub_id",
+            "dataType": "string",
+            "sourceColumn": "pub_id",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "pub_name",
+            "dataType": "string",
+            "sourceColumn": "pub_name",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "dim_titles",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[dim_titles].*   FROM [dbo].[dim_titles] ",
+              "dataSource": "SqlServer DESKTOP-0K5CLVHMSSQLSERVERM Pubs_DW 2"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[dim_titles].*   FROM [dbo].[dim_titles] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "dim_titles"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "fact_sales",
+        "columns": [
+          {
+            "name": "sales_id",
+            "dataType": "int64",
+            "sourceColumn": "sales_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "time_id",
+            "dataType": "int64",
+            "sourceColumn": "time_id",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "title_id",
+            "dataType": "string",
+            "sourceColumn": "title_id",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "au_id",
+            "dataType": "string",
+            "sourceColumn": "au_id",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "stor_id",
+            "dataType": "string",
+            "sourceColumn": "stor_id",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "emp_id",
+            "dataType": "string",
+            "sourceColumn": "emp_id",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "pub_id",
+            "dataType": "string",
+            "sourceColumn": "pub_id",
+            "sourceProviderType": "Char"
+          },
+          {
+            "name": "qty",
+            "dataType": "int64",
+            "sourceColumn": "qty",
+            "sourceProviderType": "SmallInt"
+          },
+          {
+            "name": "sales_amount",
+            "dataType": "decimal",
+            "sourceColumn": "sales_amount",
+            "formatString": "\"Bs\"#,0.00;-\"Bs\"#,0.00;\"Bs\"#,0.00",
+            "sourceProviderType": "Currency",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16394\" DisplayName=\"Bs Español (Bolivia)\" Symbol=\"Bs\" PositivePattern=\"0\" NegativePattern=\"1\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "royalty_amount",
+            "dataType": "decimal",
+            "sourceColumn": "royalty_amount",
+            "formatString": "\"Bs\"#,0.00;-\"Bs\"#,0.00;\"Bs\"#,0.00",
+            "sourceProviderType": "Currency",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16394\" DisplayName=\"Bs Español (Bolivia)\" Symbol=\"Bs\" PositivePattern=\"0\" NegativePattern=\"1\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "payterms",
+            "dataType": "string",
+            "sourceColumn": "payterms",
+            "sourceProviderType": "Char"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "fact_sales",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " \t\t\t\tSELECT [dbo].[fact_sales].*   FROM [dbo].[fact_sales] ",
+              "dataSource": "SqlServer DESKTOP-0K5CLVHMSSQLSERVERM Pubs_DW 2"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Ventas-totales",
+            "expression": "SUM([sales_amount])",
+            "formatString": "\"Bs\"#,0.00;-\"Bs\"#,0.00;\"Bs\"#,0.00",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16394\" DisplayName=\"Bs Español (Bolivia)\" Symbol=\"Bs\" PositivePattern=\"0\" NegativePattern=\"1\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "UnidadesVendidas",
+            "expression": "SUM([qty])"
+          },
+          {
+            "name": "TotalTransacciones",
+            "expression": "COUNTROWS(fact_sales)"
+          },
+          {
+            "name": "PromedioVentas",
+            "expression": "AVERAGE([sales_amount])",
+            "formatString": "\"Bs\"#,0.00;-\"Bs\"#,0.00;\"Bs\"#,0.00",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16394\" DisplayName=\"Bs Español (Bolivia)\" Symbol=\"Bs\" PositivePattern=\"0\" NegativePattern=\"1\" /></Format>"
+              }
+            ]
+          },
+          {
+            "name": "TotalRegalias",
+            "expression": "SUM([royalty_amount])",
+            "formatString": "\"Bs\"#,0.00;-\"Bs\"#,0.00;\"Bs\"#,0.00",
+            "annotations": [
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Currency\" Accuracy=\"2\" ThousandSeparator=\"True\"><Currency LCID=\"16394\" DisplayName=\"Bs Español (Bolivia)\" Symbol=\"Bs\" PositivePattern=\"0\" NegativePattern=\"1\" /></Format>"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " \t\t\t\tSELECT [dbo].[fact_sales].*   FROM [dbo].[fact_sales] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "fact_sales"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "70d36bb6-9933-4289-8c78-64894fbfefd9",
+        "fromTable": "fact_sales",
+        "fromColumn": "au_id",
+        "toTable": "dim_authors",
+        "toColumn": "au_id"
+      },
+      {
+        "name": "55b61951-4067-46fa-8fe8-7d3b3d2d07aa",
+        "fromTable": "fact_sales",
+        "fromColumn": "emp_id",
+        "toTable": "dim_employee",
+        "toColumn": "emp_id"
+      },
+      {
+        "name": "4a7bb8f3-56f7-4620-a4c1-ca2576f78cc1",
+        "fromTable": "fact_sales",
+        "fromColumn": "pub_id",
+        "toTable": "dim_publishers",
+        "toColumn": "pub_id"
+      },
+      {
+        "name": "3fdb2bda-faa0-44ac-883c-f9cf7c79687d",
+        "fromTable": "fact_sales",
+        "fromColumn": "stor_id",
+        "toTable": "dim_stores",
+        "toColumn": "stor_id"
+      },
+      {
+        "name": "8c2cdf5c-9b18-416b-ae37-7a80813691b5",
+        "fromTable": "fact_sales",
+        "fromColumn": "time_id",
+        "toTable": "dim_time",
+        "toColumn": "time_id"
+      },
+      {
+        "name": "2bb29794-fcbf-4b2c-861b-ed7efae54a2c",
+        "fromTable": "fact_sales",
+        "fromColumn": "title_id",
+        "toTable": "dim_titles",
+        "toColumn": "title_id"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "700"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}
