@@ -1,8 +1,0 @@
-C:\Users\PC-LIFE\source\repos\ModeloTabular-Pubs\PubsDW-ModeloTabular\bin\Model.asdatabase
-C:\Users\PC-LIFE\source\repos\ModeloTabular-Pubs\PubsDW-ModeloTabular\bin\Model.deploymenttargets
-C:\Users\PC-LIFE\source\repos\ModeloTabular-Pubs\PubsDW-ModeloTabular\bin\Model.deploymentoptions
-C:\Users\PC-LIFE\source\repos\ModeloTabular-Pubs\PubsDW-ModeloTabular\obj\Development\PubsDW-ModeloTabular.smproj.AssemblyReference.cache
-C:\Users\PC-LIFE\source\repos\ModeloTabular-Pubs\PubsDW-ModeloTabular\obj\Development\PubsDW-ModeloTabular.smproj.CoreCompileInputs.cache
-C:\Users\PC-LIFE\source\repos\ModeloTabular-Pubs\PubsDW-ModeloTabular\obj\Development\Model.asdatabase
-C:\Users\PC-LIFE\source\repos\ModeloTabular-Pubs\PubsDW-ModeloTabular\obj\Development\Model.deploymentoptions
-C:\Users\PC-LIFE\source\repos\ModeloTabular-Pubs\PubsDW-ModeloTabular\obj\Development\Model.deploymenttargets
