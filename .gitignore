@@ -1,0 +1,20 @@
+# Analysis Services Tabular / Visual Studio
+bin/
+obj/
+.vs/
+Model/Subordinate/
+*.user
+*.suo
+*.cache
+*.log
+*.asdatabase
+*.deploymentoptions
+*.deploymenttargets
+*.model
+
+# Archivos temporales/data
+*.tbl
+*.prt
+*.idfmeta
+*.data
+*.index
